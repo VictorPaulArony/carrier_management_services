@@ -1,0 +1,467 @@
+body,h1,h2,h3,h4,h5,h6,p {font-family: "Amatic SC", sans-serif}
+ 
+nav {
+    background-color: #f7890c;
+    height: 70px;
+    width: 100%;
+    color: #fff;
+    padding: 40px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+    
+  }
+  
+  nav ul li {
+    position: relative;
+  }
+  
+  nav ul li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+    height: 0%;
+    line-height: 50px;
+    text-decoration: none;
+  }
+  
+  nav ul li:hover > ul {
+    display: block;
+  }
+  
+  nav ul ul {
+    display: none;
+    position: absolute;
+    top: 50px;
+    
+    width: 200px;
+  }
+  
+  nav ul ul li {
+    width: 100%;
+    border-radius: 15px;
+  }
+  
+  nav ul ul li a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav ul ul li:hover {
+    background-color: #6b6565;
+  }
+  nav form {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav input[type="text"] {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  nav button[type="submit"] {
+    background-color: #fff;
+    border: none;
+    display: inline-block;
+    padding: 2px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  nav button[type="submit"] i {
+    color: #333;
+  }
+  nav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    nav ul li:not(:last-child) {
+      display: none;
+    }
+    nav ul li.icon {
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    nav ul li.icon a {
+      display: block;
+      color: #fff;
+      text-align: center;
+      padding: 0 20px;
+      height: 100%;
+    }
+}
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 5.5sssss;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  } 
+  to {
+    opacity: 1;
+  }
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+#about {
+  background-color: #f5f5f5;
+  padding: 50px;
+}
+
+#about h2 {
+  font-size: 100px;
+  font-family: "Amatic SC", sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#about p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+#locations {
+  background-image: url("image/courier.jpg");
+  padding: 50px 0;
+}
+
+#locations h2 {
+  text-align: center;
+  font-size: 100px;
+  font-family: "Amatic SC", sans-serif;
+  color: #ff7b00;
+  margin-bottom: 50px;
+}
+
+#locations ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#locations li {
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #70a3f0;
+}
+
+#locations h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#locations p {
+  font-size: 18px;
+  color: #666;
+  margin: 0;
+}
+
+#home {
+  background-color: #f5f5f5;
+  padding: 50px;
+}
+
+#home h2 {
+  font-size: 100px;
+  font-family: "Amatic SC", sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#home p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+#services {
+  background-color: #fff;
+  padding: 50px;
+  text-align: center;
+}
+
+#services h2 {
+  font-size: 100px;
+  font-family: "Amatic SC", sans-serif;
+  margin-bottom: 50px;
+}
+
+.service {
+  width: 30%;
+  margin-bottom: 50px;
+  text-align: center;
+  display: inline-block;
+}
+
+.service i {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ff6600;
+}
+
+.service h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.service p {
+  font-size: 1rem;
+  color: #666;
+}
+.pricing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px;
+  background-color: #f5f5f5;
+}
+.section-title {
+  text-align: center;
+  font-family: "Amatic SC", sans-serif;
+  margin-bottom: 40px;
+  font-size: 100px;
+  color: #333; /* change color as per your requirement */
+}
+
+
+.pricing-table {
+  max-width: 350px;
+  width: 100%;
+  margin: 30px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-header {
+  text-align: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  color: #fff;
+}
+
+.gold {
+  background-color: #FFD700;
+}
+
+.silver {
+  background-color: #C0C0C0;
+}
+
+.bronze {
+  background-color: #CD7F32;
+}
+
+.pricing-body {
+  padding: 20px;
+}
+
+h2, h3 {
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul li {
+  padding: 5px 0;
+  text-align: center;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 20px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+#contact {
+  background: #f9f9f9;  /* change color as per your requirement */
+  padding: 80px 0;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc; /* change color as per your requirement */
+  border-radius: 4px;
+  resize: vertical;
+}
+button[type="submit"] {
+  background-color: #4CAF50; /* change color as per your requirement */
+  color: #fff; /* change color as per your requirement */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button[type="submit"]:hover {
+  background-color: #45a049; /* change color as per your requirement */
+}
+footer {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 50px 0;
+}
+
+footer h3 {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+footer p {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+/* Form styles */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input,
+select {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  transition: border-color 0.2s ease-in-out;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #5fa8d3;
+}
+
+button[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #5fa8d3;
+  border: none;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #417aa6;
+}
+
+/* New styles for confirm password section */
+input[type="password"] {
+  margin-top: 0.5rem;
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+  form {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+}
+
